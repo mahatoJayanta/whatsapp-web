@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google front */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* for all */
+*{
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* html */
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+/* body */
+body{
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* anchar tag */
+a, a:hover, a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* media queries
+   >=768px */
+@media screen and (min-width: 768px) {
+  html{
+    font-size: 110%;
+  }     
 }
