@@ -15,7 +15,7 @@ function LeftMenu() {
   
 
   return (
-    // LeftMenu container
+    // LeftMenu container.......
     <div className="flex flex-col border-r border-neutral-700 w-100 h-screen">
       {/* Profile nav */}
       <div className="flex justify-between items-center bg-[#202d33] h-[60px] p-3">
